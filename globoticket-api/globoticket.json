@@ -1,0 +1,46 @@
+{
+  "events": [
+    {
+      "id": 1,
+      "artist": "Container Enthusiasm",
+      "name": "Talk Docker to Me Tour",
+      "date": "2021-10-01T19:00:00",
+      "price": 49.99,
+      "imgUrl": "logos/Container-Enthusiasm-TalkDocker-To-Me.png"
+    },
+    {
+      "id": 2,
+      "artist": "Digital Cowboys",
+      "name": "Binary Bovine Tour",
+      "date": "2021-11-01T19:30:00",
+      "price": 59.99,
+      "imgUrl": "logos/DigitalCowboys_BinaryBovine.png"
+    }
+  ],
+  "empleados": [
+    {
+      "id": 1,
+      "artist": "Jackson Cuevas",
+      "name": "Talk Docker to Me Tour",
+      "date": "2021-10-01T19:00:00",
+      "price": 49.99,
+      "imgUrl": "logos/Container-Enthusiasm-TalkDocker-To-Me.png"
+    },
+    {
+      "id": 2,
+      "artist": "Digital Cowboys",
+      "name": "Binary Bovine Tour",
+      "date": "2021-11-01T19:30:00",
+      "price": 59.99,
+      "imgUrl": "logos/DigitalCowboys_BinaryBovine.png"
+    },
+    {
+      "id": 103,
+      "artist": "Eliu Ortega",
+      "name": "Binary Bovine Tour",
+      "date": "2021-11-01T19:30:00",
+      "price": 59.99,
+      "imgUrl": "logos/DigitalCowboys_BinaryBovine.png"
+    }
+  ]
+}
