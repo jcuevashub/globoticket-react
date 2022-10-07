@@ -1,11 +1,9 @@
 import React from "react";
-import { useDispatch } from "react-redux";
 import { useMutation } from "react-query";
 import { addCart } from "./CartHelper";
 
 export default function Eventitem({ event }) {
-  const dispatch = useDispatch();
-  const mutation = useMutation((id) => dispatch(addCart(id)), {
+  const mutation = useMutation((id) => mutation(addCart(id)), {
     onSuccess: () => {
       setTimeout(() => {
         mutation.reset();

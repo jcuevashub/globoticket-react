@@ -1,9 +1,7 @@
 import React from "react";
-import { useDispatch } from "react-redux";
 import { updateCart, deleteCart } from "./CartHelper";
 
 export default function Shoppingcartitem({ event }) {
-  const dispatch = useDispatch();
   return (
     <tr className="align-middle">
       <td>
