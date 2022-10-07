@@ -16,7 +16,7 @@ app.use(bodyParser.urlencoded({ extended: false }));
 
 const jsonParser = bodyParser.json();
 
-app.use((req, res, next) => setTimeout(next, 2000));
+//app.use((req, res, next) => setTimeout(next, 2000));
 app.use(
   cors({
     origin: webAppOrigin,
