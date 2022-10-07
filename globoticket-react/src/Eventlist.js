@@ -1,15 +1,15 @@
 import React, { useEffect, useState } from "react";
+import { useQuery } from "react-query";
 import Eventitem from "./Eventitem";
 import axios from "axios";
+import { getEvents } from "./EventHelper";
 
 export default function Eventlist() {
-  const [events, setEvents] = useState([]);
+  const { isLoading, data } = useQuery("events", () => getEvents());
 
-  useEffect(() => {
-    axios.get("http://localhost:3333/events").then((response) => {
-      setEvents(response.data);
-    });
-  }, []);
+  if (isLoading) {
+    return <div className="container mt-5">Loading ...</div>;
+  }
 
   return (
     <div className="container" id="eventtable">
@@ -26,7 +26,7 @@ export default function Eventlist() {
             </tr>
           </thead>
           <tbody>
-            {events.map((event) => (
+            {data.data.map((event) => (
               <Eventitem event={event} key={event.id} />
             ))}
           </tbody>
